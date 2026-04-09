@@ -20,7 +20,12 @@ const loadTasks = () => {
 const tasks = loadTasks();
 
 const persistTasks = () => {
-  fs.writeFileSync(DATA_FILE_PATH, JSON.stringify(tasks, null, 2), "utf8");
+  try {
+    fs.writeFileSync(DATA_FILE_PATH, JSON.stringify(tasks, null, 2), "utf8");
+  } catch {
+    // In serverless environments the filesystem may be read-only.
+    // Keep operating with in-memory state instead of failing requests.
+  }
 };
 
 const getAllTasks = () => tasks;
