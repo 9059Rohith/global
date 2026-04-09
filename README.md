@@ -23,6 +23,7 @@ Full-stack Task Manager built for a technical assignment using:
 - Edit existing task title inline
 - Persist tasks to `backend/src/store/tasks.json`
 - Docker setup for one-command run
+- Basic backend API tests with Node test runner + Supertest
 
 ## Project Structure
 
@@ -78,6 +79,15 @@ npm run dev
 ```
 
 Frontend runs on: `http://localhost:5173`
+
+## Run Tests
+
+Backend API tests:
+
+```bash
+cd backend
+npm test
+```
 
 ## Docker Run
 
