@@ -1,5 +1,11 @@
 # Task Manager
 
+Live frontend:
+https://frontend-five-lovat-75.vercel.app
+
+Live backend:
+https://backend-liart-delta-70.vercel.app/tasks
+
 Full-stack Task Manager built for a technical assignment using:
 
 - Frontend: React (Vite) + plain CSS
